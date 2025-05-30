@@ -243,7 +243,7 @@ class LSTMLayer:
         self.bo -= learning_rate * dbo / batch_size
 
         return None  
-
+ 
 class DenseLayer:
     def __init__(self, input_dim, output_dim, activation='linear'):
         # Xavier initialization
@@ -299,7 +299,7 @@ class DenseLayer:
         self.b -= learning_rate * db / batch_size
 
         return dX
-
+ 
 class LSTMModel:
     def __init__(self, vocab_size, embedding_dim, hidden_dim, num_classes):
         # Create embedding matrix
